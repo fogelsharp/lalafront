@@ -1,4 +1,4 @@
-### STAGE 1: Build ###
+### STAGE 1: Build it ###
 FROM node:12 as build
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
