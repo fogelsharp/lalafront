@@ -8,9 +8,10 @@ RUN npm install --silent
 RUN npm install react-scripts -g --silent
 COPY . /usr/src/app
 RUN npm run build
+RUN ls /usr/src/app
 
 ### STAGE 2: Production Environment ###
 FROM nginx:1.16.1-alpine
-COPY --from=build /usr/src/app /usr/share/nginx/html
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
