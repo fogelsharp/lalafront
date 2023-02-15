@@ -23,9 +23,9 @@ const TodoForm = ({ addTodo }) => {
       <input name="task" type="text"
         onChange={handleChange}
         value={inputValue}
-        placeholder="Task description"
+        placeholder="party description"
       />
-      <input type="submit" value="Add new ToDo" />
+      <input type="submit" value="Add new party" />
     </form>
   );
 };
