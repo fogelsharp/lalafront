@@ -1,4 +1,4 @@
-### STAGE 1: Build it ###
+### STAGE 1: Build ###
 FROM node:12 as build
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
@@ -8,7 +8,6 @@ RUN npm install --silent
 RUN npm install react-scripts -g --silent
 COPY . /usr/src/app
 RUN npm run build
-RUN ls /usr/src/app
 
 ### STAGE 2: Production Environment ###
 FROM nginx:1.16.1-alpine
