@@ -4,7 +4,7 @@ import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
 import style from "./App.css";
 
-const API_URL = 'http://172.18.0.3:30555/api/todos';
+const API_URL = 'http://localhost:30555/api/todos';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -54,7 +54,7 @@ const App = () => {
 
   return (
     <div className={style.TodoApp}>
-      <Title title="todos" count={data.length} />
+      <Title title="LaLaLand" count={data.length} />
       <TodoForm addTodo={addTodo} />
       <TodoList list={data} removeTodo={removeTodo} />
     </div>
