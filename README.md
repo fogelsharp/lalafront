@@ -1,4 +1,4 @@
-# LalaLand Project is a stupid copy of a MERN example and It try to turn it to an event database.
+# LalaLand Project is just a copy of a MERN example, I try to turn it to a cloud based event database just for fun
 No previous experience with JS/MERN or Docker, how far I can go?
 
 # MERN example: frontend repository, see the backend repository for more details
