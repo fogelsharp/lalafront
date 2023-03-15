@@ -6,7 +6,7 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY package.json /usr/src/app/package.json
 RUN npm cache clean -f
 RUN npm install -g npm@9.6.1
-RUN npm install react-scripts -g --silent
+RUN npm install react-scripts -g
 COPY . /usr/src/app
 RUN npm run build
 
