@@ -6,10 +6,10 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY package.json /usr/src/app/package.json
 ###newstart
 RUN npm cache clean -f
-RUN npm install -g n install n 
-RUN n stable 
+###RUN npm install -g n install n 
+###RUN n stable 
 ####oldstart
-###RUN npm install --silent
+RUN npm install --silent
 ###oriproceed
 
 RUN npm install react-scripts -g --silent
