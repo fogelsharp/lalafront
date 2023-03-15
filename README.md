@@ -1,3 +1,6 @@
+# LalaLand Project is a stupid copy of a MERN example and It try to turn it to an event database.
+No previous experience with JS/MERN or Docker, how far I can go?
+
 # MERN example: frontend repository, see the backend repository for more details
 Heavily modified version of the [IBM mern-app example](https://github.com/IBM-Cloud/MERN-app).
 
