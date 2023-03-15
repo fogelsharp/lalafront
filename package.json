@@ -1,5 +1,5 @@
 {
-  "name": "LalaLand Frontend",
+  "name": "LalaLand-Frontend",
   "version": "1.0.0",
   "description": "LalaLand MERN app for Docker/Kubernetes",
   "main": "index.js",
