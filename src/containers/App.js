@@ -54,7 +54,7 @@ const App = () => {
 
   return (
     <div className={style.TodoApp}>
-      <Title title="LaLaLand" count={data.length} />
+      <Title title="LalaLand" count={data.length} />
       <TodoForm addTodo={addTodo} />
       <TodoList list={data} removeTodo={removeTodo} />
     </div>
