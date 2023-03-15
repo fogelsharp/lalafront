@@ -5,8 +5,9 @@ WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY package.json /usr/src/app/package.json
 RUN npm cache clean -f
-RUN npm install -g npm@9.6.1
+RUN npm install -g npm@9.6.2
 RUN npm install react-scripts -g
+RUN npm install --save-dev webpack webpack-cli
 COPY . /usr/src/app
 RUN npm run build
 
