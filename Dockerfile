@@ -9,7 +9,7 @@ RUN npm cache clean -f
 ###RUN npm install -g n install n 
 ###RUN n stable 
 ####oldstart
-RUN npm install --silent
+RUN npm install -g npm@9.6.1
 ###oriproceed
 
 RUN npm install react-scripts -g --silent
