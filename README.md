@@ -1,5 +1,7 @@
 # LalaLand Project is just a copy of a MERN example, I try to turn it to a cloud based event database just for fun
 No previous experience with JS/MERN or Docker, how far I can go?
+Currently the containers should build on Dockerhub, you can pull it to your server with docker pull and run it with docker compose
+Additional repositories are required (lalaback and lalacompose) got no idea how to combine it to one repo :-)
 
 # MERN example: frontend repository, see the backend repository for more details
 Heavily modified version of the [IBM mern-app example](https://github.com/IBM-Cloud/MERN-app).
