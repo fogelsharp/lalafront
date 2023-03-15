@@ -1,5 +1,5 @@
 ### STAGE 1: Build ###
-FROM node:18-alpine as build
+FROM node:18 as build
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
