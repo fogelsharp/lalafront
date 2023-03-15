@@ -1,5 +1,5 @@
 ### STAGE 1: Build ###
-FROM node:12 as build
+FROM node:18-alpine as build
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
@@ -11,6 +11,7 @@ RUN n stable
 ####oldstart
 ###RUN npm install --silent
 ###oriproceed
+
 RUN npm install react-scripts -g --silent
 COPY . /usr/src/app
 RUN npm run build
