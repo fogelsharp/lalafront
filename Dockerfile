@@ -4,7 +4,13 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY package.json /usr/src/app/package.json
-RUN npm install --silent
+###newstart
+RUN npm cache clean -f
+RUN npm install -g n install n 
+RUN n stable 
+####oldstart
+###RUN npm install --silent
+###oriproceed
 RUN npm install react-scripts -g --silent
 COPY . /usr/src/app
 RUN npm run build
