@@ -1,4 +1,4 @@
-# LalaLand Project is a copy of https://github.com/nodeshift/mern-workshop adapted to be an event database and in migration to ECR, ECS
+# LalaLand Project is a copy of https://github.com/nodeshift/mern-workshop adapted to be an event database and in migration to ECR later ECS
 No previous experience with JS/MERN or Docker, how far I can go?
 Currently the containers should build on Dockerhub, you can pull it to your server with docker pull and run it with docker compose
 Additional repositories are required (lalaback and lalacompose) got no idea how to combine it to one repo :-)
